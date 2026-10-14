@@ -1,1 +1,1 @@
-# 🚀 NextCollege
+# 🚀 NextCollege MasterClass 10
