@@ -3,10 +3,15 @@
   --primary-hover: #1d4ed8;
   --bg: #090d16;
   --surface: #131b2e;
+  --surface-hover: #17223b;
   --surface-border: #1e293b;
   --text: #f8fafc;
   --text-muted: #94a3b8;
+  --accent-gold: #f59e0b;
+  --accent-orange: #ea580c;
+  --accent-cyan: #38bdf8;
   --success: #10b981;
+  --danger: #ef4444;
 }
 
 * {
@@ -38,11 +43,32 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 4px;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in {
-  animation: fadeIn 0.3s ease-out;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
 }

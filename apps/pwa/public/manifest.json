@@ -1,7 +1,7 @@
 {
-  "name": "NextCollege Mobile PWA",
-  "short_name": "NextCollege",
-  "description": "Aplicación móvil PWA de NextCollege sincronizada en tiempo real con Dokploy CI/CD",
+  "name": "Hamburger Rapid Mobile PWA",
+  "short_name": "RapidBurger",
+  "description": "App móvil para ordenar hamburguesas de autor y simular compras en tiempo récord con Hamburger Rapid",
   "start_url": "/app/",
   "scope": "/app/",
   "display": "standalone",
